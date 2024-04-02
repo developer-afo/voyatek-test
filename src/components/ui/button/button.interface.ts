@@ -15,7 +15,7 @@ export type BaseButtonProps = {
   iconPos?: "left" | "right";
   isLoading?: boolean;
   variant?: Variant;
-  colorScheme?: ColorScheme;
+  colorscheme?: ColorScheme;
   size?: Size;
 };
 
