@@ -9,11 +9,6 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // primary: "#0D6EFD",
-        // secondary: "#0A369D",
-        // nav: "#647995",
-        // "dark-blue": "#000031",
-
         "text-white-primary": "#fff",
         "neutral-300": "#f0f2f5",
         "primary-700": "#0054e4",
@@ -46,32 +41,6 @@ const config: Config = {
         "13xl": "32px",
       },
     },
-    // fontSize: {
-    //   xs: "12px",
-    //   lg: "18px",
-    //   base: "16px",
-    //   "9xl": "28px",
-    //   "3xl": "22px",
-    //   xl: "20px",
-    //   sm: "14px",
-    //   "5xl": "24px",
-    //   lgi: "19px",
-    //   inherit: "inherit",
-    // },
-    // screens: {
-    //   mq2425: {
-    //     raw: "screen and (max-width: 2425px)",
-    //   },
-    //   mq1800: {
-    //     raw: "screen and (max-width: 1800px)",
-    //   },
-    //   mq1125: {
-    //     raw: "screen and (max-width: 1125px)",
-    //   },
-    //   mq450: {
-    //     raw: "screen and (max-width: 450px)",
-    //   },
-    // },
   },
   plugins: [],
 };
