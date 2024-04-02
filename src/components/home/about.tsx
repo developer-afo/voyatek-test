@@ -18,20 +18,10 @@ function About() {
 
       <div className="font-medium flex items-center gap-4">
         <Button
-          variant="outline"
           size="lg"
-          icon={<img src="/assets/sharefat.svg" alt="share fat icon" />}
-          className="text-base"
+          className="bg-primary-100 text-base text-primary-600 px-20"
         >
-          Share Trip
-        </Button>
-
-        <Button
-          size="lg"
-          icon={<img src="/assets/userplus.svg" alt="user plus icon" />}
-          className="bg-primary-100 text-base text-primary-600"
-        >
-          Invite Trip Buddies
+          <img src="/assets/userplus.svg" alt="user plus icon" />
         </Button>
 
         <img src="/assets/dotsthree.svg" alt="dot three icon" />

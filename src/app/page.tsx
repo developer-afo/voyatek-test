@@ -1,3 +1,4 @@
+import { tripBuddies } from "@/components/home/home.constant";
 import { ArrowLeftIcon } from "@/components/icons/arrow-left";
 import { Button } from "@/components/ui/button";
 import About from "../components/home/about";
@@ -6,7 +7,6 @@ import FlightCard from "../components/home/flight-card";
 import HotelCard from "../components/home/hotel-card";
 import InfoCard from "../components/home/info-card";
 import ListLayout from "../components/home/list-layout";
-import Members from "../components/home/members";
 
 export default function Home() {
   return (
@@ -56,13 +56,19 @@ export default function Home() {
           />
         </div>
 
-        <div className="flex items-start gap-4">
-          <Members />
+        <div className="flex items-center px-2 divide-x-2">
+          <img
+            src={tripBuddies[0].image}
+            alt={tripBuddies[0].name}
+            className="w-10 h-10 object-cover rounded-full"
+          />
+
+          <div className="w-8 h-0.5 bg-primary-100"></div>
 
           <img
             src="/assets/gearsix.svg"
             alt="gear six icon"
-            className="p-4 border rounded-full"
+            className="p-3 border-2 border-primary-100 rounded-full"
           />
         </div>
       </div>

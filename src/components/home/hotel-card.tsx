@@ -4,7 +4,17 @@ function HotelCard() {
   return (
     <CardLayout>
       <div className="w-full flex p-4">
-        <div className="hidden md:block">
+        <div className="hidden md:block relative">
+          <img
+            src="/assets/caretcircleright.svg"
+            alt="caret circle icon"
+            className="absolute left-2 top-1/2 -translate-y-1/2"
+          />
+          <img
+            src="/assets/caretcircleright-1.svg"
+            alt="caret circle icon"
+            className="absolute right-2 top-1/2 -translate-y-1/2"
+          />
           <img
             src="/assets/rectangle-3437@2x.png"
             alt="hotel image"
