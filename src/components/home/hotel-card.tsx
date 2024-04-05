@@ -23,10 +23,12 @@ function HotelCard() {
           />
         </div>
 
-        <div className="w-full h-full flex flex-col justify-between px-2 py-1">
+        <div className="w-full h-full flex flex-col justify-between px-2 py-1 gap-2 divide-y divide-neutral-400">
           <div className="flex md:flex-row flex-col justify-between items-start">
-            <div>
-              <p className="text-xl font-semibold">Riviera Resort, Lekki</p>
+            <div className="space-y-2 md:w-2/4">
+              <p className="text-lg 2xl:text-xl font-semibold">
+                Riviera Resort, Lekki
+              </p>
               <p className="font-medium text-text-black-primary">
                 18, Kenneth Agbakuru Street, Off Access Bank Admiralty Way,
                 Lekki Phase1
@@ -42,14 +44,17 @@ function HotelCard() {
                 <span>King size room</span>
               </div>
             </div>
-            <div className="text-text-black-primary">
-              <p className="font-semibold text-3xl">&#8358; 123, 450.00</p>
+
+            <div className="flex flex-col justify-end items-end gap-1 text-text-black-primary">
+              <p className="font-semibold text-2xl">
+                <span className="font-normal">&#8358;</span> 123, 450.00
+              </p>
               <p className="font-medium">Total Price: NGN 560,000</p>
               <p className="font-medium">1 room &times; 10nights incl. taxes</p>
             </div>
           </div>
 
-          <div className="text-text-black-secondary1 md:flex hidden justify-between pt-4">
+          <div className="text-text-black-secondary1 md:flex hidden justify-between pt-2">
             <div className="flex w-full gap-2">
               <span>Facilities:&nbsp;</span>
 
@@ -60,7 +65,7 @@ function HotelCard() {
               <span>Bar</span>
             </div>
 
-            <div className="flex w-full gap-2">
+            <div className="flex justify-end items-end w-full gap-2">
               <img src="/assets/calendarblank-1.svg" alt="calendar icon" />
               <span>Check In: 20-04-2024&nbsp;</span>
 
@@ -69,7 +74,7 @@ function HotelCard() {
             </div>
           </div>
 
-          <div className="flex justify-between items-center pt-4 font-medium">
+          <div className="flex justify-between items-center pt-2 font-medium">
             <div className="flex gap-6">
               <button className="text-primary-600">Hotel details</button>
               <button className="text-primary-600">Price Details</button>
