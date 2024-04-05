@@ -3,7 +3,7 @@ import CardLayout from "./card-layout";
 function ActivityCard() {
   return (
     <CardLayout>
-      <div className="w-full flex p-4">
+      <div className="w-full flex items-center p-4">
         <div className="hidden md:block relative">
           <img
             src="/assets/caretcircleright.svg"
@@ -23,32 +23,34 @@ function ActivityCard() {
           />
         </div>
 
-        <div className="w-full h-full flex flex-col justify-between px-2 py-1 ">
+        <div className="w-full h-full flex flex-col justify-between px-2 py-1 gap-2 divide-neutral-400 divide-y">
           <div className="flex md:flex-row flex-col justify-between items-start">
-            <div className="md:w-3/5">
-              <p className="text-xl font-semibold">The Museum of Modern Art</p>
+            <div className="md:w-[55%] space-y-1.5">
+              <p className="text-lg 2xl:text-xl font-semibold">
+                The Museum of Modern Art
+              </p>
               <p className="font-medium text-text-black-primary">
                 Works from Van Gogh to Warhol & beyond plus a sculpture garden,
                 2 cafes & The modern restaurant
               </p>
               <div className="flex gap-1.5">
                 <img src="/assets/mappin.svg" alt="map pin icon" />
-                <span className="text-primary-600">Directions</span>
+                <span className="text-primary-600 font-medium">Directions</span>
 
                 <img src="/assets/star.svg" alt="star icon" />
                 <span className="text-text-black-secondary1">4.5 (436)</span>
 
                 <img src="/assets/clock.svg" alt="bed icon" />
-                <span>1 Hour</span>
+                <span className="text-text-black-secondary1">1 Hour</span>
               </div>
             </div>
-            <div className="text-text-black-primary">
-              <p className="font-semibold text-3xl">&#8358; 123, 450.00</p>
+            <div className="text-text-black-primary flex flex-col justify-center items-end">
+              <p className="font-semibold text-2xl">&#8358; 123, 450.00</p>
               <p className="font-medium">10:30 AM on Mar 19</p>
             </div>
           </div>
 
-          <div className="text-text-black-secondary1 flex md:flex-row flex-col justify-between items-center pt-4">
+          <div className="text-text-black-secondary1 flex md:flex-row flex-col justify-between items-start pt-2">
             <div className="flex md:flex-row flex-col w-full gap-2">
               <span>What&#39;s Included:&nbsp;</span>
 
@@ -63,7 +65,7 @@ function ActivityCard() {
               <button className="bg-midnightblue text-white py-1 px-2 h-fit rounded">
                 Day 1
               </button>
-              <div className="md:grid flex gap-4">
+              <div className="md:grid flex gap-2">
                 <img
                   src="/assets/caretcircleup.svg"
                   alt="caret circle up icon"
@@ -76,7 +78,7 @@ function ActivityCard() {
             </div>
           </div>
 
-          <div className="flex justify-between items-center pt-4 font-medium">
+          <div className="flex justify-between items-center pt-2 font-medium">
             <div className="flex gap-6">
               <button className="text-primary-600">Activity details</button>
               <button className="text-primary-600">Price Details</button>
