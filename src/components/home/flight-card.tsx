@@ -69,7 +69,7 @@ function FlightCard() {
               </p>
             </div>
 
-            <p className="text-text-black-primary font-semibold md:text-2xl lg:text-3xl text-xl">
+            <p className="text-text-black-primary font-semibold xl:text-3xl text-xl">
               &#8358; 123, 450.00
             </p>
           </div>

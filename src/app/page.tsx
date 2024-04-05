@@ -10,7 +10,7 @@ import ListLayout from "../components/home/list-layout";
 
 export default function Home() {
   return (
-    <div className="lg:w-5/6 bg-white p-4">
+    <div className="xl:w-5/6 bg-white p-4">
       <div className="relative">
         <img src="/assets/banner.svg" alt="banner" />
         <Button className="bg-white/20 absolute top-5 left-5">
@@ -73,7 +73,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-start items-start pt-8 pb-6">
+      <div className="flex flex-col justify-start items-start pt-20 pb-6">
         <p className="font-semibold text-xl">Trip Itineraries</p>
         <p className="font-medium text-sm text-text-black-secondary">
           Your trip itineraries are placed here

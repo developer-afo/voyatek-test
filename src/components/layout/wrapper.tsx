@@ -6,7 +6,7 @@ function Wrapper({ children }: { children: React.ReactNode }) {
     <main className="bg-neutral-300 mx-auto max-w-screen-2xl">
       <Header />
 
-      <section className="w-full md:p-8 gap-10 flex justify-center">
+      <section className="w-full md:p-5 gap-8 flex justify-center">
         <NavBar />
 
         {children}

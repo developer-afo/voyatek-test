@@ -9,7 +9,7 @@ function HeaderItem(props: HeaderItemProps) {
   return (
     <div className="text-nav-text flex-col-center gap-1">
       <div>{props.icon}</div>
-      <span>{props.label}</span>
+      <span className="text-sm 2xl:text-base">{props.label}</span>
     </div>
   );
 }

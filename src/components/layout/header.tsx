@@ -16,12 +16,18 @@ function Header() {
         <Search />
       </div>
 
-      <div className="flex gap-4 lg:divide-x-2 divide-text-black-secondary/35">
-        <div className="hidden lg:flex justify-end items-center gap-3">
+      <div className="flex gap-4 xl:divide-x-2 divide-text-black-secondary/35">
+        <div className="hidden xl:flex justify-end items-center gap-3">
           {headerItems.slice(0, 5).map((item, i) => (
             <HeaderItem
               key={i}
-              icon={<img src={item.icon} alt="house icon" />}
+              icon={
+                <img
+                  src={item.icon}
+                  alt={item.name}
+                  className="h-6 w-6 2xl:h-8 2xl:w-8"
+                />
+              }
               label={item.name}
             />
           ))}
@@ -34,7 +40,13 @@ function Header() {
             {headerItems.slice(5, headerItems.length).map((item, i) => (
               <HeaderItem
                 key={i}
-                icon={<img src={item.icon} alt="house icon" />}
+                icon={
+                  <img
+                    src={item.icon}
+                    alt={item.name}
+                    className="h-6 w-6 2xl:h-8 2xl:w-8"
+                  />
+                }
                 label={item.name}
               />
             ))}
