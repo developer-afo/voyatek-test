@@ -2,7 +2,7 @@ import { navitems } from "../home/home.constant";
 
 function NavBar() {
   return (
-    <nav className="w-1/6 bg-white p-4 xl:block hidden">
+    <nav className="w-1/6 h-fit bg-white p-4 pb-16 xl:block hidden">
       <ul className="space-y-6">
         {navitems.map((item, i) => (
           <li
@@ -15,8 +15,8 @@ function NavBar() {
         ))}
       </ul>
 
-      <div className="mt-10 py-6 px-1 gap-1.5 flex items-center bg-neutral-300">
-        <p className="p-2 h-fit bg-primary-600 text-white">Go</p>
+      <div className="mt-10 py-3 px-1.5 gap-1.5 flex items-center bg-neutral-300">
+        <p className="p-2 h-fit bg-primary-600 text-white rounded">Go</p>
 
         <p className="text-text-black-secondary text-xs 2xl:text-sm font-medium">
           Personal Account
