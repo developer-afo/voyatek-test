@@ -16,7 +16,7 @@ function HotelCard() {
             className="absolute right-2 top-1/2 -translate-y-1/2"
           />
           <img
-            src="/assets/rectangle-3437@2x.png"
+            src="/assets/hotelscard.png"
             alt="hotel image"
             width={230}
             height={224}
